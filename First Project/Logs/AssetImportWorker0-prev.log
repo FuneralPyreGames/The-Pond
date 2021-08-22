@@ -12,109 +12,109 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52114
+59359
 Successfully changed project path to: /Users/lbp/Documents/Unity Projects/First-Project-main/First Project
 /Users/lbp/Documents/Unity Projects/First-Project-main/First Project
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 40.67 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 42.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.16f1 (049d6eca3c44)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.16f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/lbp/Documents/Unity Projects/First-Project-main/First Project/Assets
 GfxDevice: creating device client; threaded=0
-2021-08-21 00:23:53.037 Unity[18620:553585] (null) preferred device: Apple M1 (high power)
-2021-08-21 00:23:53.037 Unity[18620:553585] Metal devices available: 1
-2021-08-21 00:23:53.037 Unity[18620:553585] 0: Apple M1 (high power)
-2021-08-21 00:23:53.038 Unity[18620:553585] Using device Apple M1 (high power)
+2021-08-21 14:42:57.655 Unity[61511:920308] (null) preferred device: Apple M1 (high power)
+2021-08-21 14:42:57.655 Unity[61511:920308] Metal devices available: 1
+2021-08-21 14:42:57.655 Unity[61511:920308] 0: Apple M1 (high power)
+2021-08-21 14:42:57.655 Unity[61511:920308] Using device Apple M1 (high power)
 Initializing Metal device caps: Apple M1
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.16f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.16f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.3.16f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56620
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56511
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.16f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.003210 seconds.
+Registered in 0.001074 seconds.
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 40.74 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 40.95 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.734 seconds
+- Completed reload, in  1.811 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1734ms)
-		BeginReloadAssembly (77ms)
+	ReloadAssembly (1812ms)
+		BeginReloadAssembly (91ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (3ms)
-		EndReloadAssembly (899ms)
-			LoadAssemblies (75ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (184ms)
+		EndReloadAssembly (921ms)
+			LoadAssemblies (88ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (196ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (511ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (531ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (41ms)
-				BeforeProcessingInitializeOnLoad (30ms)
-				ProcessInitializeOnLoadAttributes (318ms)
-				ProcessInitializeOnLoadMethodAttributes (111ms)
+				BeforeProcessingInitializeOnLoad (29ms)
+				ProcessInitializeOnLoadAttributes (336ms)
+				ProcessInitializeOnLoadMethodAttributes (114ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (1ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003572 seconds.
+Registered in 0.005662 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 41.39 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 42.34 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.687 seconds
+- Completed reload, in  2.647 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2689ms)
-		BeginReloadAssembly (270ms)
+	ReloadAssembly (2649ms)
+		BeginReloadAssembly (274ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (32ms)
+			DisableScriptedObjects (34ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (42ms)
-		EndReloadAssembly (2322ms)
-			LoadAssemblies (190ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (2282ms)
+			LoadAssemblies (205ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (353ms)
-			ReleaseScriptCaches (1ms)
+			SetupTypeCache (362ms)
+			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (63ms)
-			SetupLoadedEditorAssemblies (1363ms)
+			SetupLoadedEditorAssemblies (1328ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (41ms)
-				BeforeProcessingInitializeOnLoad (166ms)
-				ProcessInitializeOnLoadAttributes (1105ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (42ms)
+				BeforeProcessingInitializeOnLoad (170ms)
+				ProcessInitializeOnLoadAttributes (1063ms)
 				ProcessInitializeOnLoadMethodAttributes (37ms)
 				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
+				EditorAssembliesLoaded (2ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (33ms)
+			AwakeInstancesAfterBackupRestoration (35ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launching external process: /Applications/Unity/Hub/Editor/2020.3.16f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.39 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.38 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2252 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 178.7 MB.
-System memory in use after: 178.8 MB.
+Unloading 2254 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 179.1 MB.
+System memory in use after: 179.2 MB.
 
-Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2690.
-Total: 2.475209 ms (FindLiveObjects: 0.171500 ms CreateObjectMapping: 0.042833 ms MarkObjects: 2.187500 ms  DeleteObjects: 0.071292 ms)
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2692.
+Total: 2.468500 ms (FindLiveObjects: 0.156292 ms CreateObjectMapping: 0.045042 ms MarkObjects: 2.196708 ms  DeleteObjects: 0.068375 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -128,40 +128,208 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
-  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '289988fcecf3b00d1602f8d2b589f7dd') in 1.178980 seconds 
-  Import took 1.182665 seconds .
+  path: Assets/Scenes/Menus/Credits.unity
+  artifactKey: Guid(821d9b5cb94264b6fa93f3b8c280a025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Menus/Credits.unity using Guid(821d9b5cb94264b6fa93f3b8c280a025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a84718c933fa95adaf4e437ce884bbef') in 0.018238 seconds 
+  Import took 0.021685 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000331 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
-  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8c2210586957436df79bf961aeff06e') in 0.306466 seconds 
-  Import took 0.309306 seconds .
+  Time since last request: 88.896870 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grass Tileset
+  artifactKey: Guid(d472e3ddad63344be9a62d52741cd8a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grass Tileset using Guid(d472e3ddad63344be9a62d52741cd8a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a80e209aa7f98d122e9cb526f1942d5b') in 0.002505 seconds 
+  Import took 0.013129 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000289 seconds.
-  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
-  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a31d09850e079c4c77073532874e4c7b') in 0.826314 seconds 
-  Import took 0.829190 seconds .
+  Time since last request: 15.153523 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grassland Tileset
+  artifactKey: Guid(d472e3ddad63344be9a62d52741cd8a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grassland Tileset using Guid(d472e3ddad63344be9a62d52741cd8a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfc63a1a11d456b21903263e007e851e') in 0.001096 seconds 
+  Import took 0.006208 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000229 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
-  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca0d2861f60500f05bd29199894f7bb5') in 0.086429 seconds 
-  Import took 0.088712 seconds .
+  Time since last request: 15.367259 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grassland Tileset/treesv6_0.psd
+  artifactKey: Guid(d51dfe5871d004ce0a3078c370f16837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grassland Tileset/treesv6_0.psd using Guid(d51dfe5871d004ce0a3078c370f16837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91f3011e3d9e302da7dad9bf2cdbeaa3') in 0.523975 seconds 
+  Import took 0.528105 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
-  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1280cc7be10b532b2897fc8654f95d3') in 0.030180 seconds 
-  Import took 0.032505 seconds .
+  Time since last request: 0.000245 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grassland Tileset/Cliff_tileset.png
+  artifactKey: Guid(63230483f96704e46aee5e3a6285f8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grassland Tileset/Cliff_tileset.png using Guid(63230483f96704e46aee5e3a6285f8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4e5b503d37426c1cf631628552a1781') in 0.460669 seconds 
+  Import took 0.463837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grassland Tileset/graphics-tiles-waterflow.png
+  artifactKey: Guid(edd7e3db04d7a4f87b8053b22440037d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grassland Tileset/graphics-tiles-waterflow.png using Guid(edd7e3db04d7a4f87b8053b22440037d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6072a505bde19dc4c14e819e74a0aa6b') in 0.012005 seconds 
+  Import took 0.014717 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grassland Tileset/Extra_Unfinished4.png
+  artifactKey: Guid(a53208d2a89e34b8a969fca308810ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grassland Tileset/Extra_Unfinished4.png using Guid(a53208d2a89e34b8a969fca308810ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffe21acabf0a0cb278aa5aa32a56eb81') in 0.013863 seconds 
+  Import took 0.016484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grassland Tileset/ground_tiles.png
+  artifactKey: Guid(77872d3cb42414bb58f5478ce2c2c58d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grassland Tileset/ground_tiles.png using Guid(77872d3cb42414bb58f5478ce2c2c58d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fca022ae8a931250303cb81aea32f3a') in 0.012563 seconds 
+  Import took 0.015246 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grassland Tileset/object- layer.png
+  artifactKey: Guid(da50595f334774feda09d2980bfa7cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grassland Tileset/object- layer.png using Guid(da50595f334774feda09d2980bfa7cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e975a613111eac792c0d804d4bc910e') in 0.011553 seconds 
+  Import took 0.014248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.019699 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grassland Tileset/object- layer.png
+  artifactKey: Guid(da50595f334774feda09d2980bfa7cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grassland Tileset/object- layer.png using Guid(da50595f334774feda09d2980bfa7cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e975a613111eac792c0d804d4bc910e') in 0.008948 seconds 
+  Import took 0.011846 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.204926 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grassland Tileset/object- layer.png
+  artifactKey: Guid(da50595f334774feda09d2980bfa7cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grassland Tileset/object- layer.png using Guid(da50595f334774feda09d2980bfa7cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ea02694a619814337c29367ec6d8ba7') in 0.011083 seconds 
+  Import took 0.013919 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grassland Tileset/Cliff_tileset.png
+  artifactKey: Guid(63230483f96704e46aee5e3a6285f8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grassland Tileset/Cliff_tileset.png using Guid(63230483f96704e46aee5e3a6285f8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c2fcce88fce0bd38db366d61a62dca7') in 0.016620 seconds 
+  Import took 0.019122 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grassland Tileset/graphics-tiles-waterflow.png
+  artifactKey: Guid(edd7e3db04d7a4f87b8053b22440037d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grassland Tileset/graphics-tiles-waterflow.png using Guid(edd7e3db04d7a4f87b8053b22440037d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d8da70213e964d19c5bddf1d227c801') in 0.010235 seconds 
+  Import took 0.012834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grassland Tileset/Extra_Unfinished4.png
+  artifactKey: Guid(a53208d2a89e34b8a969fca308810ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grassland Tileset/Extra_Unfinished4.png using Guid(a53208d2a89e34b8a969fca308810ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6023e7246bd5a234968d49fd2554edaf') in 0.008628 seconds 
+  Import took 0.010934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grassland Tileset/ground_tiles.png
+  artifactKey: Guid(77872d3cb42414bb58f5478ce2c2c58d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grassland Tileset/ground_tiles.png using Guid(77872d3cb42414bb58f5478ce2c2c58d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7982ffb347fe6491d4ce4e23a4e2fbb7') in 0.010993 seconds 
+  Import took 0.013296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grassland Tileset/treesv6_0.psd
+  artifactKey: Guid(d51dfe5871d004ce0a3078c370f16837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grassland Tileset/treesv6_0.psd using Guid(d51dfe5871d004ce0a3078c370f16837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69f49a167156cade8190f6c741d69d14') in 0.009511 seconds 
+  Import took 0.011864 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002347 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grassland Tileset/graphics-tiles-waterflow.png
+  artifactKey: Guid(edd7e3db04d7a4f87b8053b22440037d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grassland Tileset/graphics-tiles-waterflow.png using Guid(edd7e3db04d7a4f87b8053b22440037d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d8da70213e964d19c5bddf1d227c801') in 0.013009 seconds 
+  Import took 0.015596 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.506857 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grassland Tileset/Cliff_tileset.asset
+  artifactKey: Guid(19f02c6e589134194b3e01dd43d0f27b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grassland Tileset/Cliff_tileset.asset using Guid(19f02c6e589134194b3e01dd43d0f27b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fcb2300ab918cb8843e18e7f7be853c') in 0.697040 seconds 
+  Import took 0.709230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 106.897522 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grassland Tileset/Cliff_tileset.png
+  artifactKey: Guid(63230483f96704e46aee5e3a6285f8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grassland Tileset/Cliff_tileset.png using Guid(63230483f96704e46aee5e3a6285f8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '036934241f8de527947622c11c60d42e') in 0.039146 seconds 
+  Import took 0.049902 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.845488 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grassland Tileset/object- layer.png
+  artifactKey: Guid(da50595f334774feda09d2980bfa7cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grassland Tileset/object- layer.png using Guid(da50595f334774feda09d2980bfa7cf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '015034d10a064d603a20341dad0b749e') in 0.011840 seconds 
+  Import took 0.015026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grassland Tileset/graphics-tiles-waterflow.png
+  artifactKey: Guid(edd7e3db04d7a4f87b8053b22440037d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grassland Tileset/graphics-tiles-waterflow.png using Guid(edd7e3db04d7a4f87b8053b22440037d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2cfb4ec3853e5c74c0cee3751f714ad') in 0.017162 seconds 
+  Import took 0.020214 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grassland Tileset/Extra_Unfinished4.png
+  artifactKey: Guid(a53208d2a89e34b8a969fca308810ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grassland Tileset/Extra_Unfinished4.png using Guid(a53208d2a89e34b8a969fca308810ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a366560c19429c5b4f48ba37f9c58192') in 0.011675 seconds 
+  Import took 0.014350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grassland Tileset/ground_tiles.png
+  artifactKey: Guid(77872d3cb42414bb58f5478ce2c2c58d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grassland Tileset/ground_tiles.png using Guid(77872d3cb42414bb58f5478ce2c2c58d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e924eb034241a30d965cb1f02546a14d') in 0.013118 seconds 
+  Import took 0.015579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grassland Tileset/treesv6_0.psd
+  artifactKey: Guid(d51dfe5871d004ce0a3078c370f16837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grassland Tileset/treesv6_0.psd using Guid(d51dfe5871d004ce0a3078c370f16837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '145e6b54c9ce76b42eca3f5016e49d35') in 0.014677 seconds 
+  Import took 0.017215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grassland Tileset/ground_tiles.png
+  artifactKey: Guid(77872d3cb42414bb58f5478ce2c2c58d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grassland Tileset/ground_tiles.png using Guid(77872d3cb42414bb58f5478ce2c2c58d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e924eb034241a30d965cb1f02546a14d') in 0.014304 seconds 
+  Import took 0.016626 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023859 seconds.
+  path: Assets/Tilemap/Whispers of Avalon- Grassland Tileset/treesv6_0.psd
+  artifactKey: Guid(d51dfe5871d004ce0a3078c370f16837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tilemap/Whispers of Avalon- Grassland Tileset/treesv6_0.psd using Guid(d51dfe5871d004ce0a3078c370f16837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '145e6b54c9ce76b42eca3f5016e49d35') in 0.009199 seconds 
+  Import took 0.012139 seconds .
 
