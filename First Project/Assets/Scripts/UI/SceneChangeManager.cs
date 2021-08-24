@@ -11,6 +11,7 @@ public class SceneChangeManager : MonoBehaviour
     public static SceneChangeManager Instance;
     public MusicController musicController;
     private bool fromCredits = false;
+    private bool fromLevel1 = false;
     void Awake(){
         musicController = GameObject.Find("Audio").GetComponent<MusicController>();
         if (Instance != null){
@@ -35,8 +36,17 @@ public class SceneChangeManager : MonoBehaviour
     }
 
     public void LoadTopDownLevel1(){
+        fromLevel1 = true;
         musicController.SongSelect(2);
         SceneManager.LoadScene("TD Level 1");
+    }
+
+    public void LoadTopDownLevel2(){
+        if (fromLevel1 == false){
+            musicController.SongSelect(2);
+            fromLevel1 = true;
+        }
+        SceneManager.LoadScene("TD Level 2");
     }
 
     public void Exit()

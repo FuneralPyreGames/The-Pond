@@ -6,12 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Top Down Levels/TD Level 1.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
     path: Assets/Scenes/Menus/Main Menu.unity
     guid: 92da0180e80a846a5a483d1acfcfe288
   - enabled: 1
     path: Assets/Scenes/Menus/Credits.unity
     guid: 821d9b5cb94264b6fa93f3b8c280a025
+  - enabled: 1
+    path: Assets/Scenes/Top Down Levels/TD Level 1.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Top Down Levels/TD Level 2.unity
+    guid: cd18529f3fc184e2091d81d4e8423524
   m_configObjects: {}
