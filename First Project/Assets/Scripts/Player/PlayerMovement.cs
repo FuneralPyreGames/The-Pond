@@ -29,5 +29,13 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag("Level 2 Entrance")){
             sceneChangeManager.LoadTopDownLevel2();
         }
+        if (other.CompareTag("From House"))
+        {
+            sceneChangeManager.LoadTopDownLevel2();
+        }
+        if (other.CompareTag("Level 3 Entrance"))
+        {
+            sceneChangeManager.LoadTopDownLevel3();
+        }
     }
 }

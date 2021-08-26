@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Level 2 Entrance
+  - Level 3 Entrance
+  - From House
   layers:
   - Default
   - TransparentFX

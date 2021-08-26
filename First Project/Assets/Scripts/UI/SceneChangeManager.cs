@@ -10,6 +10,7 @@ public class SceneChangeManager : MonoBehaviour
 {    //All of these functions are called to load their individual levels. All voids are public so they can be seen by buttons.
     public static SceneChangeManager Instance;
     public MusicController musicController;
+    public PlayerMovement player;
     private bool fromCredits = false;
     private bool fromLevel1 = false;
     void Awake(){
@@ -20,12 +21,14 @@ public class SceneChangeManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
-    public void Start(){
-    }
+
     public void LoadMainMenu(){
         if (fromCredits == false){
             musicController.SongSelect(1);
-            fromCredits = true;
+        }
+        else if (fromCredits == true)
+        {
+            fromCredits = false;
         }
         SceneManager.LoadScene("Main Menu");
     }
@@ -44,9 +47,17 @@ public class SceneChangeManager : MonoBehaviour
     public void LoadTopDownLevel2(){
         if (fromLevel1 == false){
             musicController.SongSelect(2);
-            fromLevel1 = true;
+        }
+        else if (fromLevel1 == true)
+        {
+            fromLevel1 = false;
         }
         SceneManager.LoadScene("TD Level 2");
+    }
+
+    public void LoadTopDownLevel3()
+    {
+        SceneManager.LoadScene("TD Level 3");
     }
 
     public void Exit()
