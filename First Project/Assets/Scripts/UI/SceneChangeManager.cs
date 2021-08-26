@@ -21,7 +21,6 @@ public class SceneChangeManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
-
     public void LoadMainMenu(){
         if (fromCredits == false){
             musicController.SongSelect(1);
