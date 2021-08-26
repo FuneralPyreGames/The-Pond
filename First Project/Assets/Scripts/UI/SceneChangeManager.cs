@@ -57,6 +57,7 @@ public class SceneChangeManager : MonoBehaviour
 
     public void LoadTopDownLevel3()
     {
+        musicController.SongSelect(3);
         SceneManager.LoadScene("TD Level 3");
     }
 
