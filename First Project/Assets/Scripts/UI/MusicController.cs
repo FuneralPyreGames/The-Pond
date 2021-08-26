@@ -8,6 +8,7 @@ public class MusicController : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip flowerGarden;
     public AudioClip wavyGround;
+    public AudioClip warmSummer;
     void Awake(){
         audioSource = GetComponent<AudioSource>();
         if (Instance != null){
@@ -27,6 +28,10 @@ public class MusicController : MonoBehaviour
             break;
             case 2:
             audioSource.clip = wavyGround;
+            audioSource.Play();
+            break;
+            case 3:
+            audioSource.clip = warmSummer;
             audioSource.Play();
             break;
             default:

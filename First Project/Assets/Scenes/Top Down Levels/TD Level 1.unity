@@ -156,6 +156,7 @@ MonoBehaviour:
   audioSource: {fileID: 15814130}
   flowerGarden: {fileID: 8300000, guid: 042f1965a2df14f5ca3c17ae7928c736, type: 3}
   wavyGround: {fileID: 8300000, guid: 0a4ee34a41c47488cb2a5a3440f490f7, type: 3}
+  warmSummer: {fileID: 8300000, guid: 726e17ecfb86d448bac47e9f90559e3f, type: 3}
 --- !u!82 &15814130
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2748,7 +2749,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_LocalRotation: {x: 1e-45, y: 0.000000019182067, z: 0, w: 1}
+  m_LocalRotation: {x: 1.0255803e-15, y: 0.000000015274168, z: -1.5664884e-23, w: 1}
   m_LocalPosition: {x: -15.37, y: 1.46, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -7292,7 +7293,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420138857}
-  m_LocalRotation: {x: 1e-45, y: 0.000000019182067, z: 0, w: 1}
+  m_LocalRotation: {x: 1.0255803e-15, y: 0.000000015274168, z: -1.5664884e-23, w: 1}
   m_LocalPosition: {x: -15.37, y: 1.46, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
