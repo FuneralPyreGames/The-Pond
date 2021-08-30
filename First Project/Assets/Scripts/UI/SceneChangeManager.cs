@@ -8,49 +8,27 @@ using UnityEditor;
 
 public class SceneChangeManager : MonoBehaviour
 {    //All of these functions are called to load their individual levels. All voids are public so they can be seen by buttons.
-    public static SceneChangeManager Instance;
     public MusicController musicController;
-    public PlayerMovement player;
-    private bool fromCredits = false;
-    private bool fromLevel1 = false;
     void Awake(){
         musicController = GameObject.Find("Audio").GetComponent<MusicController>();
-        if (Instance != null){
-            Destroy(gameObject);
-        }
-        Instance = this;
         DontDestroyOnLoad(gameObject);
     }
     public void LoadMainMenu(){
-        if (fromCredits == false){
-            musicController.SongSelect(1);
-        }
-        else if (fromCredits == true)
-        {
-            fromCredits = false;
-        }
+        musicController.SongSelect(1);
         SceneManager.LoadScene("Main Menu");
     }
 
     public void LoadCredits(){
-        fromCredits = true;
         SceneManager.LoadScene("Credits");
     }
 
     public void LoadTopDownLevel1(){
-        fromLevel1 = true;
         musicController.SongSelect(2);
         SceneManager.LoadScene("TD Level 1");
     }
 
     public void LoadTopDownLevel2(){
-        if (fromLevel1 == false){
-            musicController.SongSelect(2);
-        }
-        else if (fromLevel1 == true)
-        {
-            fromLevel1 = false;
-        }
+        musicController.SongSelect(2);
         SceneManager.LoadScene("TD Level 2");
     }
 
