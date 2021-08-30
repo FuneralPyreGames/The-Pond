@@ -7,6 +7,7 @@ TagManager:
   - Level 2 Entrance
   - Level 3 Entrance
   - From House
+  - NPC
   layers:
   - Default
   - TransparentFX

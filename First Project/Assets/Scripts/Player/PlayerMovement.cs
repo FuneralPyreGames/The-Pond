@@ -8,9 +8,11 @@ public class PlayerMovement : MonoBehaviour
     public SceneChangeManager sceneChangeManager;
     public Rigidbody2D rB;
     Vector2 movement;
+    public NPCHandler nPCHandler;
     // Update is called once per frame
     void Awake(){
-        sceneChangeManager = GameObject.Find("SceneSwitcher").GetComponent<SceneChangeManager>();
+        //sceneChangeManager = GameObject.Find("SceneSwitcher").GetComponent<SceneChangeManager>();
+        nPCHandler = GameObject.Find("NPC").GetComponent<NPCHandler>();
     }
     void Update()
     {
@@ -36,6 +38,10 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag("Level 3 Entrance"))
         {
             sceneChangeManager.LoadTopDownLevel3();
+        }
+        if (other.CompareTag("NPC"))
+        {
+            nPCHandler.TriggerDialogue();
         }
     }
 }

@@ -8,6 +8,7 @@ public class MusicController : MonoBehaviour
     public AudioClip flowerGarden;
     public AudioClip wavyGround;
     public AudioClip warmSummer;
+    public static bool firstrun = true;
     void Awake(){
         DontDestroyOnLoad(gameObject);
     }
