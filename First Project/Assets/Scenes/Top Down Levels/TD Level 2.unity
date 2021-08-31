@@ -405,11 +405,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: j beebs
+    names:
+    - Player
+    - ???
+    - Player
+    - ???
+    - ???
+    - Player
+    - ???
+    - Player
+    - ???
+    - ???
+    - ???
+    - Player
+    - ???
+    - Player
     sentences:
-    - Welp
-    - Girl you got that yummy
-    - yum that yummy yum
+    - Hi!
+    - Huh?
+    - Hi, I was wondering where the town was. Do you happen to know?
+    - Oh yeah, the town is just across that bridge over to your right.
+    - "It\u2019s locked right now, so you\u2019ll need to use a key to unlock it."
+    - Thanks!
+    - .......
+    - "Uh\u2026..where would I get that key?"
+    - Oh wait, do you not know? Silly newcomers, I should have known.
+    - "You\u2019ll need to go up and take the path to the Proprietor Of The Bridge\u2019s
+      house."
+    - You can try to get the key from in there.
+    - What do you mean try?
+    - ....
+    - "OK\u2026..thanks?"
 --- !u!61 &284853913
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -592,8 +618,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1024,7 +1050,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1028767404
 MonoBehaviour:
   m_ObjectHideFlags: 0

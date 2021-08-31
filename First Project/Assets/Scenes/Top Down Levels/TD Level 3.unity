@@ -5271,11 +5271,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: forogt name
+    names:
+    - Claire
+    - Player
     sentences:
-    - Hi, welcome to my home!
-    - I hate it here.
-    - Please just let me leave.
+    - Claire moment
+    - Player moment
 --- !u!1 &1146883682
 GameObject:
   m_ObjectHideFlags: 0

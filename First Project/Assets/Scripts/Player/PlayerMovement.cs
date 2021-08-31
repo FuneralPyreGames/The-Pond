@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public NPCHandler nPCHandler;
     // Update is called once per frame
     void Awake(){
-        //sceneChangeManager = GameObject.Find("SceneSwitcher").GetComponent<SceneChangeManager>();
+        sceneChangeManager = GameObject.Find("SceneSwitcher").GetComponent<SceneChangeManager>();
         nPCHandler = GameObject.Find("NPC").GetComponent<NPCHandler>();
     }
     void Update()
