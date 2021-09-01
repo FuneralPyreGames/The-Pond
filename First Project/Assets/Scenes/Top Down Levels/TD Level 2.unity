@@ -1154,7 +1154,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1096112981
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1236,6 +1236,7 @@ MonoBehaviour:
   sceneChangeManager: {fileID: 0}
   rB: {fileID: 1096112984}
   chestAnim: {fileID: 0}
+  isAbleToMove: 1
   nPCHandler: {fileID: 0}
 --- !u!50 &1096112984
 Rigidbody2D:
@@ -1316,6 +1317,7 @@ MonoBehaviour:
   Audio: {fileID: 3787421239889240984, guid: c80fd43f77eae4e10aea72bb47239395, type: 3}
   SceneSwitcher: {fileID: 635303346818110691, guid: ea429273c5ef9424db63b91ae05fe660, type: 3}
   simpleSwitch: {fileID: 0}
+  Player: {fileID: 1096112980}
 --- !u!4 &1131600204
 Transform:
   m_ObjectHideFlags: 0

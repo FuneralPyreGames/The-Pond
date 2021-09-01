@@ -8,18 +8,19 @@ public class OnStart : MonoBehaviour
     public GameObject Audio;
     public GameObject SceneSwitcher;
     public GameObject simpleSwitch;
+    public GameObject Player;
     void Start()
     {
         if (GameObject.Find("SceneSwitcher(Clone)") == null){
             Instantiate(Audio, new Vector3(0,0,0), Audio.transform.rotation);
             Instantiate(SceneSwitcher, new Vector3(0, 0, 0), SceneSwitcher.transform.rotation);
-            if (simpleSwitch != null){
-                simpleSwitch.SetActive(true);
-            }
-            Destroy(gameObject);
         }
-        else{
-            Destroy(gameObject);
+        if (Player != null){
+            Player.SetActive(true);
         }
+        if (simpleSwitch != null){
+            simpleSwitch.SetActive(true);
+        }
+        Destroy(gameObject);
     }
 }

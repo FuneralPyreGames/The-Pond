@@ -6,6 +6,7 @@ using TMPro;
 public class DialogueManager : MonoBehaviour
 {
     public GameObject dialogueBox;
+    public PlayerMovement playerMovement;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
     private Queue<string> sentences;
@@ -13,6 +14,9 @@ public class DialogueManager : MonoBehaviour
     private string defaultDialogue = "Default Dialogue";
     private string defaultName = "Default Name";
 
+    void Awake(){
+        //playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
+    }
     void Start()
     {
         sentences = new Queue<string>();
@@ -21,6 +25,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue (Dialogue dialogue)
     {
+        //playerMovement.isAbleToMove = false;
         dialogueBox.SetActive(true);
         sentences.Clear();
         names.Clear();
@@ -49,6 +54,7 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         dialogueBox.SetActive(false);
+        //playerMovement.isAbleToMove = true;
         dialogueText.text = defaultDialogue;
         nameText.text = defaultName;
     }

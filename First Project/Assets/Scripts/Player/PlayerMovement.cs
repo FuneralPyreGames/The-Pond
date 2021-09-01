@@ -8,12 +8,13 @@ public class PlayerMovement : MonoBehaviour
     public SceneChangeManager sceneChangeManager;
     public Rigidbody2D rB;
     public Animator chestAnim;
+    public bool isAbleToMove = true;
     Vector2 movement;
     public NPCHandler nPCHandler;
     // Update is called once per frame
     void Awake(){
-        sceneChangeManager = GameObject.Find("SceneSwitcher(Clone)").GetComponent<SceneChangeManager>();
         nPCHandler = GameObject.Find("NPC").GetComponent<NPCHandler>();
+        sceneChangeManager = GameObject.Find("SceneSwitcher(Clone)").GetComponent<SceneChangeManager>();
     }
     void Update()
     {
@@ -23,8 +24,10 @@ public class PlayerMovement : MonoBehaviour
     }
     
     void FixedUpdate(){
+        if (isAbleToMove == true){
+            rB.MovePosition(rB.position + movement * speed * Time.fixedDeltaTime);
+        }
         //This is where the movement is performed. By putting it in fixed update, frame rate issues will not affect the movement
-        rB.MovePosition(rB.position + movement * speed * Time.fixedDeltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D other){
