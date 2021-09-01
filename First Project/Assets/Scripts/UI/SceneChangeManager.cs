@@ -10,7 +10,7 @@ public class SceneChangeManager : MonoBehaviour
 {    //All of these functions are called to load their individual levels. All voids are public so they can be seen by buttons.
     public MusicController musicController;
     void Awake(){
-        musicController = GameObject.Find("Audio").GetComponent<MusicController>();
+        musicController = GameObject.Find("Audio(Clone)").GetComponent<MusicController>();
         DontDestroyOnLoad(gameObject);
     }
     public void LoadMainMenu(){

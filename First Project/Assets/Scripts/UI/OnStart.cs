@@ -4,19 +4,22 @@ using UnityEngine;
 
 public class OnStart : MonoBehaviour
 {
+    public static bool firstStartup;
     public GameObject Audio;
     public GameObject SceneSwitcher;
+    public GameObject simpleSwitch;
     void Start()
     {
-        Instantiate(Audio, new Vector3(0,0,0), Audio.transform.rotation);
-        StartCoroutine(Basic());
-        Destroy(gameObject);
-    }
-
-    // Update is called once per frame
-    IEnumerator Basic()
-    {
-        yield return new WaitForSeconds(0.5f);
-        Instantiate(SceneSwitcher, new Vector3(0, 0, 0), SceneSwitcher.transform.rotation);
+        if (GameObject.Find("SceneSwitcher(Clone)") == null){
+            Instantiate(Audio, new Vector3(0,0,0), Audio.transform.rotation);
+            Instantiate(SceneSwitcher, new Vector3(0, 0, 0), SceneSwitcher.transform.rotation);
+            if (simpleSwitch != null){
+                simpleSwitch.SetActive(true);
+            }
+            Destroy(gameObject);
+        }
+        else{
+            Destroy(gameObject);
+        }
     }
 }
