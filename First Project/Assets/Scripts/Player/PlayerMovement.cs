@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5f;
     public SceneChangeManager sceneChangeManager;
     public Rigidbody2D rB;
+    public Animator chestAnim;
     Vector2 movement;
     public NPCHandler nPCHandler;
     // Update is called once per frame
@@ -42,6 +43,19 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag("NPC"))
         {
             nPCHandler.TriggerDialogue();
+        }
+        if (other.CompareTag("Chest"))
+        {
+            Debug.Log("Chest Trigger");
+            chestAnim.SetTrigger("Open");
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        Debug.Log("Trigger is exited");
+        if (other.CompareTag("Chest"))
+        {
+            chestAnim.SetTrigger("Close");
         }
     }
 }

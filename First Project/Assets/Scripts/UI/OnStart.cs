@@ -9,13 +9,14 @@ public class OnStart : MonoBehaviour
     void Start()
     {
         Instantiate(Audio, new Vector3(0,0,0), Audio.transform.rotation);
-        //Instantiate(SceneSwitcher, new Vector3(0,0,0), SceneSwitcher.transform.rotation);
+        StartCoroutine(Basic());
         Destroy(gameObject);
     }
 
     // Update is called once per frame
-    void Update()
+    IEnumerator Basic()
     {
-        
+        yield return new WaitForSeconds(0.5f);
+        Instantiate(SceneSwitcher, new Vector3(0, 0, 0), SceneSwitcher.transform.rotation);
     }
 }

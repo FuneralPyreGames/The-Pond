@@ -8,6 +8,7 @@ TagManager:
   - Level 3 Entrance
   - From House
   - NPC
+  - Chest
   layers:
   - Default
   - TransparentFX
