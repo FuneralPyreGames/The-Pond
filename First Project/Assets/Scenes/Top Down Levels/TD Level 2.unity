@@ -255,6 +255,13 @@ MonoBehaviour:
     - ....
     - "OK\u2026..thanks?"
     speakerName: ???
+  altDialogue:
+    names:
+    - ???
+    sentences:
+    - I plan to speak here.
+    speakerName: ???
+  persistentData: {fileID: 0}
 --- !u!61 &284853913
 BoxCollider2D:
   m_ObjectHideFlags: 0

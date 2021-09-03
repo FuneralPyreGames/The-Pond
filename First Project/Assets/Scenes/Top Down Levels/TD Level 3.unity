@@ -209,6 +209,7 @@ MonoBehaviour:
     sentences:
     - You have found the bridge key!
     - Use this to enter the bridge!
+    speakerName: 
 --- !u!50 &142610459
 Rigidbody2D:
   serializedVersion: 4
@@ -5044,6 +5045,8 @@ MonoBehaviour:
     sentences:
     - Claire moment
     - Player moment
+    speakerName: Claire
+  persistentData: {fileID: 0}
 --- !u!1 &1208386969
 GameObject:
   m_ObjectHideFlags: 0
