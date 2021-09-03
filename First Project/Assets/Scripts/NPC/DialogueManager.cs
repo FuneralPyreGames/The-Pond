@@ -49,14 +49,25 @@ public class DialogueManager : MonoBehaviour
         }
         string sentence = sentences.Dequeue();
         string name = names.Dequeue();
-        dialogueText.text = sentence;
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
         nameText.text = name;
+    }
+
+    IEnumerator TypeSentence(string sentence)
+    {
+        dialogueText.text = "";
+        foreach (char letter in sentence.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(0.010f);
+        }
     }
     void EndDialogue()
     {
         dialogueBoxAnim.SetTrigger("DialogueOver");
         playerMovement.isAbleToMove = true;
-        dialogueBox.SetActive(true);
+        dialogueBox.SetActive(false);
         //dialogueText.text = defaultDialogue;
         //nameText.text = defaultName;
     }

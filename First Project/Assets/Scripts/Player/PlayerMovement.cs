@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5f;
     public SceneChangeManager sceneChangeManager;
+    public PersistentData persistentData;
     public Rigidbody2D rB;
     public Animator chestAnim;
     public bool isAbleToMove = true;
@@ -16,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     void Awake(){
         nPCHandler = GameObject.Find("NPC").GetComponent<NPCHandler>();
         sceneChangeManager = GameObject.Find("SceneSwitcher(Clone)").GetComponent<SceneChangeManager>();
+        persistentData = GameObject.Find("PersistentData(Clone)").GetComponent<PersistentData>();
     }
     void Update()
     {
@@ -55,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
             chestAnim.SetTrigger("Open");
             FindObjectOfType<DialogueManager>().StartDialogue(chestScript);
             Debug.Log("Dialogue should be starting!");
+            persistentData.key1 = true;
         }
     }
     private void OnTriggerExit2D(Collider2D other)
