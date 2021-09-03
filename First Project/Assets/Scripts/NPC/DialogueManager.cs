@@ -11,11 +11,12 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     private Queue<string> sentences;
     private Queue<string> names;
-    private string defaultDialogue = "Default Dialogue";
-    private string defaultName = "Default Name";
+    public Animator dialogueBoxAnim;
+    //private string defaultDialogue = "Default Dialogue";
+    //private string defaultName = "Default Name";
 
     void Awake(){
-        //playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
+        playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
     }
     void Start()
     {
@@ -25,7 +26,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue (Dialogue dialogue)
     {
-        //playerMovement.isAbleToMove = false;
+        playerMovement.isAbleToMove = false;
         dialogueBox.SetActive(true);
         sentences.Clear();
         names.Clear();
@@ -53,9 +54,10 @@ public class DialogueManager : MonoBehaviour
     }
     void EndDialogue()
     {
-        dialogueBox.SetActive(false);
-        //playerMovement.isAbleToMove = true;
-        dialogueText.text = defaultDialogue;
-        nameText.text = defaultName;
+        dialogueBoxAnim.SetTrigger("DialogueOver");
+        playerMovement.isAbleToMove = true;
+        dialogueBox.SetActive(true);
+        //dialogueText.text = defaultDialogue;
+        //nameText.text = defaultName;
     }
 }

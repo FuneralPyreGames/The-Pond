@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public bool isAbleToMove = true;
     Vector2 movement;
     public NPCHandler nPCHandler;
+    public Dialogue chestScript;
     // Update is called once per frame
     void Awake(){
         nPCHandler = GameObject.Find("NPC").GetComponent<NPCHandler>();
@@ -49,8 +50,11 @@ public class PlayerMovement : MonoBehaviour
         }
         if (other.CompareTag("Chest"))
         {
+            isAbleToMove = false;
             Debug.Log("Chest Trigger");
             chestAnim.SetTrigger("Open");
+            FindObjectOfType<DialogueManager>().StartDialogue(chestScript);
+            Debug.Log("Dialogue should be starting!");
         }
     }
     private void OnTriggerExit2D(Collider2D other)

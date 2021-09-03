@@ -9,6 +9,7 @@ public class OnStart : MonoBehaviour
     public GameObject SceneSwitcher;
     public GameObject simpleSwitch;
     public GameObject Player;
+    public GameObject dialogueManager;
     void Start()
     {
         if (GameObject.Find("SceneSwitcher(Clone)") == null){
@@ -20,6 +21,9 @@ public class OnStart : MonoBehaviour
         }
         if (simpleSwitch != null){
             simpleSwitch.SetActive(true);
+        }
+        if (dialogueManager != null){
+            dialogueManager.SetActive(true);
         }
         Destroy(gameObject);
     }
