@@ -767,6 +767,10 @@ MonoBehaviour:
   Audio: {fileID: 3787421239889240984, guid: c80fd43f77eae4e10aea72bb47239395, type: 3}
   SceneSwitcher: {fileID: 635303346818110691, guid: ea429273c5ef9424db63b91ae05fe660, type: 3}
   simpleSwitch: {fileID: 391913485}
+  Player: {fileID: 0}
+  dialogueManager: {fileID: 0}
+  Inventory: {fileID: 0}
+  persistentData: {fileID: 0}
 --- !u!4 &972434388
 Transform:
   m_ObjectHideFlags: 0
@@ -1060,7 +1064,7 @@ GameObject:
   - component: {fileID: 1408523897}
   - component: {fileID: 1408523896}
   m_Layer: 5
-  m_Name: Credits Text
+  m_Name: Version Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1082,7 +1086,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 237.6, y: 122.400024}
+  m_AnchoredPosition: {x: 237.5, y: 63.7}
   m_SizeDelta: {x: 2968.83, y: 898.6001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1408523896
@@ -1105,7 +1109,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Alpha 2
+  m_text: 'Alpha 3
+
 
 '
   m_isRightToLeft: 0

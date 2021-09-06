@@ -23,6 +23,11 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<string>();
         names = new Queue<string>();
     }
+    void Update(){
+        if (Input.GetKeyDown("space")){
+            DisplayNextSentence();
+        }
+    }
 
     public void StartDialogue (Dialogue dialogue)
     {

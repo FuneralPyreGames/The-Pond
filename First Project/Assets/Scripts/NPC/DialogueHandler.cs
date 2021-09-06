@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPCHandler : MonoBehaviour
+public class DialogueHandler : MonoBehaviour
 {
     public Dialogue dialogue;
     public Dialogue altDialogue;
@@ -13,24 +13,31 @@ public class NPCHandler : MonoBehaviour
         if (dialogue.speakerName == "???")
         {
             persistentData = GameObject.Find("PersistentData(Clone)").GetComponent<PersistentData>();
-            if (persistentData.questionheard == false)
+            if (persistentData.questionHeard == false)
             {
                 FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-                persistentData.questionheard = true;
+                persistentData.questionHeard = true;
             }
-            else if (persistentData.question2heard == false)
+            else if (persistentData.question2Heard == false)
             {
                 FindObjectOfType<DialogueManager>().StartDialogue(altDialogue);
-                persistentData.question2heard = true;
+                persistentData.question2Heard = true;
             }
         }
         if (dialogue.speakerName == "Claire")
         {
             persistentData = GameObject.Find("PersistentData(Clone)").GetComponent<PersistentData>();
-            if (persistentData.claireheard == false)
+            if (persistentData.claireHeard == false)
             {
                 FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
-                persistentData.claireheard = true;
+                persistentData.claireHeard = true;
+            }
+        }
+        if (dialogue.speakerName == "Water Spirit"){
+            persistentData = GameObject.Find("PersistentData(Clone)").GetComponent<PersistentData>();
+            if (persistentData.waterSpiritHeard == false){
+                FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+                persistentData.waterSpiritHeard = true;
             }
         }
     }

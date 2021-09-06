@@ -6,9 +6,9 @@ TagManager:
   tags:
   - Level 2 Entrance
   - Level 3 Entrance
-  - From House
   - NPC
   - Chest
+  - Bridge
   layers:
   - Default
   - TransparentFX

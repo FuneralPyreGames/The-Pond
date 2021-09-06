@@ -38,6 +38,10 @@ public class SceneChangeManager : MonoBehaviour
         SceneManager.LoadScene("TD Level 3");
     }
 
+    public void LoadTopDownLevel4(){
+        SceneManager.LoadScene("TD Level 4");
+    }
+
     public void Exit()
     {
         //This code checks if the player is playing in editor, or on a build. If they are using a build, the application will quit, and if they are using the editor, it will exit play mode

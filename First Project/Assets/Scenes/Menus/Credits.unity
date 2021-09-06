@@ -198,7 +198,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Audio: {fileID: 3787421239889240984, guid: c80fd43f77eae4e10aea72bb47239395, type: 3}
   SceneSwitcher: {fileID: 635303346818110691, guid: ea429273c5ef9424db63b91ae05fe660, type: 3}
-  simpleSwitch: {fileID: 0}
+  simpleSwitch: {fileID: 1463940173}
+  Player: {fileID: 0}
+  dialogueManager: {fileID: 0}
+  Inventory: {fileID: 0}
+  persistentData: {fileID: 0}
 --- !u!4 &332935229
 Transform:
   m_ObjectHideFlags: 0

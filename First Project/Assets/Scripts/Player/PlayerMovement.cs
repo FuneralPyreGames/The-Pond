@@ -10,12 +10,12 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rB;
     public Animator chestAnim;
     public bool isAbleToMove = true;
-    Vector2 movement;
-    public NPCHandler nPCHandler;
+    [SerializeField]Vector2 movement;
+    public DialogueHandler dialogueHandler;
     public Dialogue chestScript;
     // Update is called once per frame
     void Awake(){
-        nPCHandler = GameObject.Find("NPC").GetComponent<NPCHandler>();
+        dialogueHandler = GameObject.Find("NPC").GetComponent<DialogueHandler>();
         sceneChangeManager = GameObject.Find("SceneSwitcher(Clone)").GetComponent<SceneChangeManager>();
         persistentData = GameObject.Find("PersistentData(Clone)").GetComponent<PersistentData>();
     }
@@ -34,35 +34,40 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other){
-        Debug.Log("Trigger is entered");
+        //Debug.Log("Trigger is entered");
+        //Entrance to Level 2
         if (other.CompareTag("Level 2 Entrance")){
             sceneChangeManager.LoadTopDownLevel2();
         }
-        if (other.CompareTag("From House"))
-        {
-            sceneChangeManager.LoadTopDownLevel2();
-        }
+        //Entrance to Level 3
         if (other.CompareTag("Level 3 Entrance"))
         {
             sceneChangeManager.LoadTopDownLevel3();
         }
+        //Enters an NPC's trigger zone to start dialogue
         if (other.CompareTag("NPC"))
         {
-            nPCHandler.TriggerDialogue();
+            dialogueHandler.TriggerDialogue();
         }
+        //Enters the trigger zone for the chest in Level 3
         if (other.CompareTag("Chest"))
         {
             isAbleToMove = false;
-            Debug.Log("Chest Trigger");
             chestAnim.SetTrigger("Open");
             FindObjectOfType<DialogueManager>().StartDialogue(chestScript);
-            Debug.Log("Dialogue should be starting!");
             persistentData.key1 = true;
+        }
+        //Enters the bridge area in level 2
+        if (other.CompareTag("Bridge")){
+            if (persistentData.key1 == true){
+                persistentData.key1 = false;
+                sceneChangeManager.LoadTopDownLevel4();
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("Trigger is exited");
+        //Debug.Log("Trigger is exited");
         if (other.CompareTag("Chest"))
         {
             chestAnim.SetTrigger("Close");

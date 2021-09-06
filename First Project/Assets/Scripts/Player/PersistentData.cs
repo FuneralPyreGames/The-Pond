@@ -9,9 +9,10 @@ public class PersistentData : MonoBehaviour
     public bool moneybag = false;
     public bool boatlicense = false;
     public bool inventory = false;
-    public bool questionheard = false;
-    public bool question2heard = false;
-    public bool claireheard = false;
+    public bool questionHeard = false;
+    public bool question2Heard = false;
+    public bool claireHeard = false;
+    public bool waterSpiritHeard = false;
 
     private void Update()
     {
