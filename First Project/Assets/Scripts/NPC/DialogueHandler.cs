@@ -40,5 +40,15 @@ public class DialogueHandler : MonoBehaviour
                 persistentData.waterSpiritHeard = true;
             }
         }
+        if (dialogue.speakerName == "Window Guy")
+        {
+            persistentData = GameObject.Find("PersistentData(Clone)").GetComponent<PersistentData>();
+            if (persistentData.windowGuyHeard == false)
+            {
+                FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+                persistentData.key2 = true;
+                persistentData.windowGuyHeard = true;
+            }
+        }
     }
 }

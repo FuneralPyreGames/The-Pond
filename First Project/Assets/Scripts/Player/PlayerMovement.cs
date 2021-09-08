@@ -11,11 +11,9 @@ public class PlayerMovement : MonoBehaviour
     public Animator chestAnim;
     public bool isAbleToMove = true;
     [SerializeField]Vector2 movement;
-    public DialogueHandler dialogueHandler;
     public Dialogue chestScript;
     // Update is called once per frame
     void Awake(){
-        dialogueHandler = GameObject.Find("NPC").GetComponent<DialogueHandler>();
         sceneChangeManager = GameObject.Find("SceneSwitcher(Clone)").GetComponent<SceneChangeManager>();
         persistentData = GameObject.Find("PersistentData(Clone)").GetComponent<PersistentData>();
     }
@@ -47,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
         //Enters an NPC's trigger zone to start dialogue
         if (other.CompareTag("NPC"))
         {
-            dialogueHandler.TriggerDialogue();
+            other.GetComponent<DialogueHandler>().TriggerDialogue();
         }
         //Enters the trigger zone for the chest in Level 3
         if (other.CompareTag("Chest"))
