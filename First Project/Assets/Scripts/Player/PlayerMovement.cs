@@ -62,6 +62,11 @@ public class PlayerMovement : MonoBehaviour
                 sceneChangeManager.LoadTopDownLevel4();
             }
         }
+        //Entrance to level 5
+        if (other.CompareTag("Level 5 Entrance"))
+        {
+            sceneChangeManager.LoadTopDownLevel5();
+        }
     }
     private void OnTriggerExit2D(Collider2D other)
     {

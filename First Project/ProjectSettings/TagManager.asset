@@ -9,6 +9,7 @@ TagManager:
   - NPC
   - Chest
   - Bridge
+  - Level 5 Entrance
   layers:
   - Default
   - TransparentFX

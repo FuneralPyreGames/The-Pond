@@ -43,6 +43,12 @@ public class SceneChangeManager : MonoBehaviour
         SceneManager.LoadScene("TD Level 4");
     }
 
+    public void LoadTopDownLevel5()
+    {
+        //musicController.SongSelect(5);
+        SceneManager.LoadScene("TD Level 5");
+    }
+
     public void Exit()
     {
         //This code checks if the player is playing in editor, or on a build. If they are using a build, the application will quit, and if they are using the editor, it will exit play mode

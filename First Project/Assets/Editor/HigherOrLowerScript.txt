@@ -1,0 +1,8 @@
+Hey there! Welcome to Higher Or Lower. Pick one of our two options for only $5 and let's get it started!
+
+"Nice job! That puts your bank at $(insert value) so far! Now, do you want to cash out or play on?
+"Congrats! Do you want to play on or cash out?"
+"I'm impressed! You now have $(insert value) in the bank! Cash out, or play on?
+
+"I'm so sorry, but you are incorrect. You lose your entire bank. Please play again!"
+"That is wrong. Your bank is gone. Please play again."
