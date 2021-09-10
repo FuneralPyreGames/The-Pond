@@ -1000,3 +1000,4 @@ Received Import Request.
 Start importing Assets/Images/Ship_full.png using Guid(eb0e11e8bf84be143b7bdb7a3de3b98a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a67700aac5fdc4935334633c2150b12') in 0.010143 seconds 
   Import took 0.013197 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
