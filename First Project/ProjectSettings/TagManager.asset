@@ -10,6 +10,8 @@ TagManager:
   - Chest
   - Bridge
   - Level 5 Entrance
+  - Shop
+  - Casino
   layers:
   - Default
   - TransparentFX

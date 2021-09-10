@@ -67,6 +67,15 @@ public class PlayerMovement : MonoBehaviour
         {
             sceneChangeManager.LoadTopDownLevel5();
         }
+        if (other.CompareTag("Shop"))
+        {
+            if (persistentData.key2 == true){
+                other.GetComponent<DialogueHandler>().TriggerDialogue();
+            }
+        }
+        if (other.CompareTag ("Casino")){
+            sceneChangeManager.LoadCasino();
+        }
     }
     private void OnTriggerExit2D(Collider2D other)
     {

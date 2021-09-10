@@ -6,6 +6,7 @@ using TMPro;
 public class HigherOrLower : MonoBehaviour
 {
     public CasinoButtonHandler casinoButtonHandler;
+    public PersistentData persistentData;
     public Dealer Dealer;
     public int playerMoney;
     public int previousNumber;
@@ -22,7 +23,8 @@ public class HigherOrLower : MonoBehaviour
     }
     void Awake()
     {
-        playerMoney = 25;
+        persistentData = GameObject.Find("PersistentData(Clone)").GetComponent<PersistentData>();
+        playerMoney = persistentData.money;
         playerMoneyText.text = "$";
         playerMoneyText.text += playerMoney;
         currentNumber = Random.Range(1,21);
