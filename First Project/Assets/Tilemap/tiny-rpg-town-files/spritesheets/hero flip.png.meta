@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: 0d604146ce43543559020e89831298f2
+guid: 98edfc71bf7664cd48ec992f8fe46cff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8922328891513336043
-    second: npc_0
+      213: -5184088046241734873
+    second: hero flip_0
   - first:
-      213: 5527661196443274707
-    second: npc_1
+      213: -9217534174446027692
+    second: hero flip_1
   - first:
-      213: -2495014906627460004
-    second: npc_2
+      213: 1223522307617697152
+    second: hero flip_2
   - first:
-      213: 5610367206947713552
-    second: npc_3
+      213: 6569591401242171475
+    second: hero flip_3
   - first:
-      213: 2230936588577103941
-    second: npc_4
+      213: -6977142393052670411
+    second: hero flip_4
   - first:
-      213: -9111473675286820144
-    second: npc_5
+      213: 9148576475450994338
+    second: hero flip_5
   - first:
-      213: -5627484699997550656
-    second: npc_6
+      213: -5038907352996502599
+    second: hero flip_6
   - first:
-      213: -5051899674784280284
-    second: npc_7
+      213: 413249808637545029
+    second: hero flip_7
   - first:
-      213: 307091595780809877
-    second: npc_8
+      213: 7699602949679011691
+    second: hero flip_8
   - first:
-      213: -2126968859773451732
-    second: npc_9
+      213: 1813490096465330785
+    second: hero flip_9
   - first:
-      213: -5535047699543943917
-    second: npc_10
+      213: -1191747537876861981
+    second: hero flip_10
   - first:
-      213: -4526993761146232485
-    second: npc_11
+      213: 6059215420103392870
+    second: hero flip_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -123,23 +123,11 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: npc_0
+      name: hero flip_0
       rect:
         serializedVersion: 2
         x: 0
@@ -153,14 +141,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51f842c45258d2480800000000000000
-      internalID: -8922328891513336043
+      spriteID: 72f996f636b6e08b0800000000000000
+      internalID: -5184088046241734873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_1
+      name: hero flip_1
       rect:
         serializedVersion: 2
         x: 16
@@ -174,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3dd46b4429236bc40800000000000000
-      internalID: 5527661196443274707
+      spriteID: 45cfe13418db41080800000000000000
+      internalID: -9217534174446027692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_2
+      name: hero flip_2
       rect:
         serializedVersion: 2
         x: 32
@@ -195,14 +183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c547a2d592def5dd0800000000000000
-      internalID: -2495014906627460004
+      spriteID: 08da1586e03daf010800000000000000
+      internalID: 1223522307617697152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_3
+      name: hero flip_3
       rect:
         serializedVersion: 2
         x: 0
@@ -216,14 +204,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0127e9def370cdd40800000000000000
-      internalID: 5610367206947713552
+      spriteID: 358108e7290eb2b50800000000000000
+      internalID: 6569591401242171475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_4
+      name: hero flip_4
       rect:
         serializedVersion: 2
         x: 16
@@ -237,14 +225,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5406f8ed101e5fe10800000000000000
-      internalID: 2230936588577103941
+      spriteID: 536d6c2c5f53c2f90800000000000000
+      internalID: -6977142393052670411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_5
+      name: hero flip_5
       rect:
         serializedVersion: 2
         x: 32
@@ -258,14 +246,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dac43c87fa8d8180800000000000000
-      internalID: -9111473675286820144
+      spriteID: 2ae60cb45d546fe70800000000000000
+      internalID: 9148576475450994338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_6
+      name: hero flip_6
       rect:
         serializedVersion: 2
         x: 0
@@ -279,14 +267,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c743b52b7827e1b0800000000000000
-      internalID: -5627484699997550656
+      spriteID: 9b32a80b574321ab0800000000000000
+      internalID: -5038907352996502599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_7
+      name: hero flip_7
       rect:
         serializedVersion: 2
         x: 16
@@ -300,14 +288,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 421529b030c04e9b0800000000000000
-      internalID: -5051899674784280284
+      spriteID: 54ac65fe2882cb500800000000000000
+      internalID: 413249808637545029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_8
+      name: hero flip_8
       rect:
         serializedVersion: 2
         x: 32
@@ -321,14 +309,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 594e508ed22034400800000000000000
-      internalID: 307091595780809877
+      spriteID: b67da27a61c7ada60800000000000000
+      internalID: 7699602949679011691
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_9
+      name: hero flip_9
       rect:
         serializedVersion: 2
         x: 0
@@ -342,14 +330,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c22c2e8571d7b72e0800000000000000
-      internalID: -2126968859773451732
+      spriteID: 162418b62afca2910800000000000000
+      internalID: 1813490096465330785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_10
+      name: hero flip_10
       rect:
         serializedVersion: 2
         x: 16
@@ -363,14 +351,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31517d5717f8f23b0800000000000000
-      internalID: -5535047699543943917
+      spriteID: 3eb37eeadef067fe0800000000000000
+      internalID: -1191747537876861981
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: npc_11
+      name: hero flip_11
       rect:
         serializedVersion: 2
         x: 32
@@ -384,8 +372,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b512876c823ec21c0800000000000000
-      internalID: -4526993761146232485
+      spriteID: 66ef4dc4258a61450800000000000000
+      internalID: 6059215420103392870
       vertices: []
       indices: 
       edges: []

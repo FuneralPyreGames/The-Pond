@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 142610459}
   - component: {fileID: 142610458}
   - component: {fileID: 142610457}
+  - component: {fileID: 142610461}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -213,6 +214,7 @@ MonoBehaviour:
   boatAnim: {fileID: 0}
   secondCamera: {fileID: 0}
   Canvas: {fileID: 0}
+  playerAnim: {fileID: 142610461}
 --- !u!50 &142610459
 Rigidbody2D:
   serializedVersion: 4
@@ -285,6 +287,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &142610461
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142610455}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 07c2beac82d38407d98e1030e447b44f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &200905419
 GameObject:
   m_ObjectHideFlags: 0
@@ -4834,7 +4855,7 @@ SpriteRenderer:
   m_SortingLayerID: -1919232513
   m_SortingLayer: 2
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: a33a22982b1324558a134bc1c103b3c8, type: 3}
+  m_Sprite: {fileID: 5610367206947713552, guid: 0d604146ce43543559020e89831298f2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4925,11 +4946,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     names:
+    - ???
+    - Player
+    - ???
+    - ???
+    - ???
+    - Claire
     - Claire
     - Player
+    - Claire
+    - Claire
+    - Claire
+    - Player
+    - Claire
+    - Player
+    - Claire
+    - Player
+    - Player
+    - Claire
+    - Player
+    - Claire
     sentences:
-    - Claire moment
-    - Player moment
+    - "Hello? Who\u2019s there?"
+    - Hi! Um..I was just wondering if I could get a key to the bridge?
+    - 'Oh, a key to the bridge! '
+    - "I haven\u2019t had a new person need one in years!"
+    - Please, allow me to introduce myself!
+    - 'My name is Claire, and I am the Proprietor Of The Bridge! '
+    - Basically, I just make sure any visitors get the key so they can cross the
+      bridge.
+    - That sure is a long title for what you actually do.
+    - "Yeah, it\u2019s excessively formal...."
+    - But!
+    - "I get paid a ton of money just to stay here, so I\u2019m not one to complain."
+    - So, can I just get a key?
+    - "Yep, that\u2019s the whole purpose of coming to me!"
+    - Wow, that guy outside the bridge made it seem like it would be harder than
+      that.
+    - "Oh, Ivan? Don\u2019t mind him. He\u2019s just old and cranky, but he has a
+      good heart!"
+    - "\u2026\u2026ok!"
+    - So can I have the key then?
+    - "Yep! If you want to go to the right, it\u2019s just in the chest in my bedroom."
+    - Alright, thank you!
+    - No problem!
     speakerName: Claire
   altDialogue:
     names: []

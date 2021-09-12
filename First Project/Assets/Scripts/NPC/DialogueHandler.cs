@@ -18,11 +18,6 @@ public class DialogueHandler : MonoBehaviour
                 FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
                 persistentData.questionHeard = true;
             }
-            else if (persistentData.question2Heard == false)
-            {
-                FindObjectOfType<DialogueManager>().StartDialogue(altDialogue);
-                persistentData.question2Heard = true;
-            }
         }
         if (dialogue.speakerName == "Claire")
         {

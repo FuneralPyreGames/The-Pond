@@ -12,7 +12,6 @@ public class PersistentData : MonoBehaviour
     public bool inventory = false;
     //Dialogue
     public bool questionHeard = false;
-    public bool question2Heard = false;
     public bool claireHeard = false;
     public bool waterSpiritHeard = false;
     public bool windowGuyHeard = false;

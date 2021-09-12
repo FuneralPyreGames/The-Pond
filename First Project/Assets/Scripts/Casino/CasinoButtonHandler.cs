@@ -12,6 +12,7 @@ public class CasinoButtonHandler : MonoBehaviour
     public bool inGame = false;
     public string playerChoice;
     public TextMeshProUGUI playerMoney;
+    public GameObject Canvas;
     public void ExitCasino()
     {
         persistentData = GameObject.Find("PersistentData(Clone)").GetComponent<PersistentData>();
@@ -64,5 +65,11 @@ public class CasinoButtonHandler : MonoBehaviour
         higherOrLower.bankText.text += higherOrLower.Bank;
         higherOrLower.roundWins = 1;
         inGame = false;
+    }
+    public void HowToPlay(){
+        Canvas.SetActive(true);
+    }
+    public void ExitHowToPlay(){
+        Canvas.SetActive(false);
     }
 }

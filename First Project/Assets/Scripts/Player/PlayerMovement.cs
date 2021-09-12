@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator boatAnim;
     public GameObject secondCamera;
     public GameObject Canvas;
+    public Animator playerAnim;
     // Update is called once per frame
     void Awake(){
         sceneChangeManager = GameObject.Find("SceneSwitcher(Clone)").GetComponent<SceneChangeManager>();
@@ -28,6 +29,9 @@ public class PlayerMovement : MonoBehaviour
     }
     
     void FixedUpdate(){
+        playerAnim.SetFloat("Horizontal", movement.x);
+        playerAnim.SetFloat("Vertical", movement.y);
+        playerAnim.SetFloat("Magnitude", movement.magnitude);
         if (isAbleToMove == true){
             rB.MovePosition(rB.position + movement * speed * Time.fixedDeltaTime);
         }

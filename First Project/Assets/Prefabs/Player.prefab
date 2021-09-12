@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5259690753691430119}
   - component: {fileID: 5259690753691430120}
   - component: {fileID: 5259690753691430121}
+  - component: {fileID: 6254406324060309694}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -99,10 +100,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   sceneChangeManager: {fileID: 0}
+  persistentData: {fileID: 0}
   rB: {fileID: 5259690753691430120}
   chestAnim: {fileID: 0}
   isAbleToMove: 1
-  nPCHandler: {fileID: 0}
+  movement: {x: 0, y: 0}
+  chestScript:
+    names: []
+    sentences: []
+    speakerName: 
+  boatAnim: {fileID: 0}
+  secondCamera: {fileID: 0}
+  Canvas: {fileID: 0}
+  playerAnim: {fileID: 6254406324060309694}
 --- !u!50 &5259690753691430120
 Rigidbody2D:
   serializedVersion: 4
@@ -150,3 +160,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!95 &6254406324060309694
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5259690753691430116}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 07c2beac82d38407d98e1030e447b44f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

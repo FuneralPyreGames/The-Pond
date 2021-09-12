@@ -770,7 +770,9 @@ MonoBehaviour:
   Player: {fileID: 0}
   dialogueManager: {fileID: 0}
   Inventory: {fileID: 0}
+  PersistentData: {fileID: 0}
   persistentData: {fileID: 0}
+  speedrunTimer: {fileID: 0}
 --- !u!4 &972434388
 Transform:
   m_ObjectHideFlags: 0
@@ -1086,7 +1088,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 238.46, y: 118.4}
+  m_AnchoredPosition: {x: 260.89, y: 118.4}
   m_SizeDelta: {x: 2968.83, y: 898.6001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1408523896
@@ -1109,10 +1111,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Beta 1
-
-
-'
+  m_text: Pre-Release
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7cc6580be389248c5b2306e025c476f8, type: 2}
   m_sharedMaterial: {fileID: 4099709263581011451, guid: 7cc6580be389248c5b2306e025c476f8, type: 2}

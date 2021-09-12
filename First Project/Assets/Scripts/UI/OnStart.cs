@@ -50,6 +50,14 @@ public class OnStart : MonoBehaviour
             speedrunTimer.text += " minutes and ";
             speedrunTimer.text += persistentData.Seconds;
             speedrunTimer.text += " seconds!";
+            Destroy(GameObject.Find("Inventory(Clone)"));
+            Destroy(GameObject.Find("PersistentData(Clone)"));
+        }
+        if (scene.name == "TD Level 2"){
+            persistentData = GameObject.Find("PersistentData(Clone)").GetComponent<PersistentData>();
+            if (persistentData.key1 == true){
+                GameObject.Find("NPC").SetActive(false);
+            }
         }
         Destroy(gameObject);
     }
