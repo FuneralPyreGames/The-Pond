@@ -83,5 +83,19 @@ public class DialogueHandler : MonoBehaviour
                 persistentData.money += 25;
             }
         }
+        if (dialogue.speakerName == "Pond 1"){
+            persistentData = GameObject.Find("PersistentData(Clone)").GetComponent<PersistentData>();
+            if (persistentData.pond1Heard == false){
+                FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+                persistentData.pond1Heard = true;
+            }
+        }
+        if (dialogue.speakerName == "Pond 2"){
+            persistentData = GameObject.Find("PersistentData(Clone)").GetComponent<PersistentData>();
+            if (persistentData.pond2Heard == false){
+                FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+                persistentData.pond2Heard = true;
+            }
+        }
     }
 }

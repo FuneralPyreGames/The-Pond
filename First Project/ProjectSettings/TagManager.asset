@@ -12,6 +12,8 @@ TagManager:
   - Level 5 Entrance
   - Shop
   - Casino
+  - Boat Switch
+  - Pond
   layers:
   - Default
   - TransparentFX

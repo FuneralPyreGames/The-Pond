@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class OnStart : MonoBehaviour
 {
@@ -12,7 +13,9 @@ public class OnStart : MonoBehaviour
     public GameObject Player;
     public GameObject dialogueManager;
     public GameObject Inventory;
-    public GameObject persistentData;
+    public GameObject PersistentData;
+    public PersistentData persistentData;
+    public TextMeshProUGUI speedrunTimer;
     void Start()
     {
         if (GameObject.Find("SceneSwitcher(Clone)") == null)
@@ -25,7 +28,7 @@ public class OnStart : MonoBehaviour
             if (GameObject.Find("Inventory(Clone)") == null)
             {
                 Instantiate(Inventory, new Vector3(0, 0, 0), Inventory.transform.rotation);
-                Instantiate(persistentData, new Vector3(0, 0, 0), persistentData.transform.rotation);
+                Instantiate(PersistentData, new Vector3(0, 0, 0), PersistentData.transform.rotation);
                 DontDestroyOnLoad(GameObject.Find("Inventory(Clone)"));
                 DontDestroyOnLoad(GameObject.Find("PersistentData(Clone)"));
             }
@@ -39,7 +42,15 @@ public class OnStart : MonoBehaviour
         if (dialogueManager != null){
             dialogueManager.SetActive(true);
         }
-
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name ==  "End Screen"){
+            persistentData = GameObject.Find("PersistentData(Clone)").GetComponent<PersistentData>();
+            speedrunTimer.text = "You completed the game in ";
+            speedrunTimer.text += persistentData.Minutes;
+            speedrunTimer.text += " minutes and ";
+            speedrunTimer.text += persistentData.Seconds;
+            speedrunTimer.text += " seconds!";
+        }
         Destroy(gameObject);
     }
 }

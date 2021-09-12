@@ -12,6 +12,9 @@ public class PlayerMovement : MonoBehaviour
     public bool isAbleToMove = true;
     [SerializeField]Vector2 movement;
     public Dialogue chestScript;
+    public Animator boatAnim;
+    public GameObject secondCamera;
+    public GameObject Canvas;
     // Update is called once per frame
     void Awake(){
         sceneChangeManager = GameObject.Find("SceneSwitcher(Clone)").GetComponent<SceneChangeManager>();
@@ -76,6 +79,20 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag ("Casino")){
             sceneChangeManager.LoadCasino();
         }
+        if (other.CompareTag ("Pond")){
+            if (persistentData.boatlicense == true){
+                sceneChangeManager.LoadTopDownLevel6();
+            }
+
+        }
+        if (other.CompareTag ("Boat Switch")){
+            isAbleToMove = false;
+            GameObject.Find("CM vcam1").SetActive(false);
+            secondCamera.SetActive(true);
+            boatAnim.SetTrigger("Animate Boat");
+            StartCoroutine(ScheduleEnding());
+            persistentData.SAC();
+        }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -84,5 +101,12 @@ public class PlayerMovement : MonoBehaviour
         {
             chestAnim.SetTrigger("Close");
         }
+    }
+    IEnumerator ScheduleEnding(){
+        yield return new WaitForSeconds(5);
+        Canvas.SetActive(true);
+        yield return new WaitForSeconds(5);
+        sceneChangeManager.LoadEndScreen();
+        StopAllCoroutines();
     }
 }

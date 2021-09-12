@@ -14,7 +14,6 @@ public class SceneChangeManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
     public void LoadMainMenu(){
-        musicController.SongSelect(1);
         SceneManager.LoadScene("Main Menu");
     }
 
@@ -51,7 +50,16 @@ public class SceneChangeManager : MonoBehaviour
 
     public void LoadCasino()
     {
+        //musicController.SongSelect(6);
         SceneManager.LoadScene("Casino");
+    }
+    public void LoadTopDownLevel6(){
+        musicController.SongSelect(3);
+        SceneManager.LoadScene("TD Level 6");
+    }
+    public void LoadEndScreen(){
+        musicController.SongSelect(1);
+        SceneManager.LoadScene("End Screen");
     }
 
     public void Exit()

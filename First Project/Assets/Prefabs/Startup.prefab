@@ -49,4 +49,6 @@ MonoBehaviour:
   Player: {fileID: 0}
   dialogueManager: {fileID: 0}
   Inventory: {fileID: 8904604670777474164, guid: 9c42f699066a21a4a8ceee2166fb8146, type: 3}
-  persistentData: {fileID: 4978547692054732121, guid: 43752d754a0931a44bdac219235aa53d, type: 3}
+  PersistentData: {fileID: 4978547692054732121, guid: 43752d754a0931a44bdac219235aa53d, type: 3}
+  persistentData: {fileID: 0}
+  speedrunTimer: {fileID: 0}
