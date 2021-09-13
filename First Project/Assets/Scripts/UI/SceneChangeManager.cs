@@ -44,13 +44,13 @@ public class SceneChangeManager : MonoBehaviour
 
     public void LoadTopDownLevel5()
     {
-        //musicController.SongSelect(5);
+        musicController.SongSelect(5);
         SceneManager.LoadScene("TD Level 5");
     }
 
     public void LoadCasino()
     {
-        //musicController.SongSelect(6);
+        musicController.SongSelect(6);
         SceneManager.LoadScene("Casino");
     }
     public void LoadTopDownLevel6(){

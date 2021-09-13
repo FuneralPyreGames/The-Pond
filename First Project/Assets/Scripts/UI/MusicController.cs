@@ -8,6 +8,8 @@ public class MusicController : MonoBehaviour
     public AudioClip flowerGarden;
     public AudioClip wavyGround;
     public AudioClip warmSummer;
+    public AudioClip dancingRoads;
+    public AudioClip ofFaces;
     public AudioClip sadRiver;
     public static bool firstrun = true;
     void Awake(){
@@ -32,6 +34,14 @@ public class MusicController : MonoBehaviour
             break;
             case 4:
             audioSource.clip = sadRiver;
+            audioSource.Play();
+            break;
+            case 5:
+            audioSource.clip = dancingRoads;
+            audioSource.Play();
+            break;
+            case 6:
+            audioSource.clip = ofFaces;
             audioSource.Play();
             break;
             default:

@@ -4,8 +4,18 @@ using UnityEngine;
 public class SimpleSwitch : MonoBehaviour
 {
     public SceneChangeManager sceneSwitcher;
+    public GameObject Canvus;
+    public GameObject Player;
+    private bool onlyOnce;
     void Awake(){
         sceneSwitcher = GameObject.Find("SceneSwitcher(Clone)").GetComponent<SceneChangeManager>();
+    }
+    void Update(){
+        if (Input.GetKeyDown("space") && onlyOnce == false){
+            Canvus.SetActive(false);
+            Player.SetActive(true); 
+            onlyOnce = true;
+        }
     }
     // Start is called before the first frame update
     public void MM()

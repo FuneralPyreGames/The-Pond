@@ -59,6 +59,9 @@ public class OnStart : MonoBehaviour
                 GameObject.Find("NPC").SetActive(false);
             }
         }
+        if (scene.name == "TD Level 1"){
+            Player.SetActive(false);
+        }
         Destroy(gameObject);
     }
 }
