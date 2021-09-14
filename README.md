@@ -1,4 +1,4 @@
-# The-Pond
+# The Pond
 
 This is the full Unity project for my game, The Pond. It was made in version 20.3.17f1 for my first project in Computer Science 3. 
 
