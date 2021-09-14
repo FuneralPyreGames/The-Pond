@@ -1,5 +1,10 @@
-# First-Project
-The project- 
+#First-project
+
+This is the full Unity project for my game, The Pond. It was made in version 20.3.17f1 for my first project in Computer Science 3. 
+
+The itch page- funeral-pyre-games.itch.io/the-pond
+
+The project description as given to me- 
 
 Stretch and grow your Unity ideas by creating a simple 2D game with the following features:
 
